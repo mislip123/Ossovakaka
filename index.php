@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="nl">
     <head>
-        <title>Eenmaal Andermaal</title>
+        <title>KiKaKankerVakantie</title>
         <meta charset="utf-8">
         <link rel="icon" type="image/x-icon" href="Logo.jpg">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
