@@ -1,5 +1,19 @@
-body {
-    background-image: url('Background.jpg');
+body.ossovakaka {
+    background-image: url('/images/background_ossovakaka.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.ramranch {
+    background-image: url('/images/background_ramranch.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.padvinders {
+    background-image: url('/images/background_padvinders.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -39,4 +53,21 @@ body {
 
 .links {
     background-color: antiquewhite;
+}
+
+.izjen_titel {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.titel {
+    color: black;
+    border: antiquewhite;
+    font-size: 40px;
+}
+
+.countdown {
+    background-color: antiquewhite;
+    font-size: 20px;
 }
