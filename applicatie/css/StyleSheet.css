@@ -3,6 +3,7 @@ body.ossovakaka {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
 body.ramranch {
@@ -10,6 +11,7 @@ body.ramranch {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
 body.padvinders {
@@ -17,6 +19,7 @@ body.padvinders {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
 .header {
@@ -56,18 +59,30 @@ body.padvinders {
 }
 
 .izjen_titel {
-    margin: auto;
-    width: 100%;
-    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .titel {
     color: black;
     border: antiquewhite;
     font-size: 40px;
+    text-shadow: 2px 2px #000;
+    -webkit-text-stroke: 1px #fff;
+    color: #000;
 }
 
 .countdown {
     background-color: antiquewhite;
     font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.countdown h2 {
+    font-size: 36px;
+}
+
+.countdown p {
+    font-size: 24px;
 }
