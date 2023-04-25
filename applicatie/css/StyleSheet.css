@@ -72,6 +72,15 @@ body.padvinders {
     color: #000;
 }
 
+.ondertitel {
+    color: rgb(255, 255, 255);
+    border: black;
+    font-size: 20px;
+    text-shadow: 2px 2px #000;
+    -webkit-text-stroke: 1px #fff;
+    color: #000;  
+}
+
 .countdown {
     background-color: antiquewhite;
     font-size: 20px;
@@ -114,3 +123,150 @@ body.padvinders {
     background-color: #111;
   }
   
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+tr:hover {
+    background-color: orange;
+}
+
+.bold {
+    font-weight: normal;
+}
+
+/* restaurants */
+.vreetschuren {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.restaurant {
+  background-color: silver;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #aaa;
+  margin: 20px 0;
+  padding: 20px;
+  width: 70%;
+}
+
+.restaurant img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.restaurant h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.restaurant p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.restaurant a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.restaurant a:hover {
+  text-decoration: underline;
+}
+
+.restaurant img {
+    float: left;
+    margin-right: 10px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.restaurant__title {
+    margin-top: 0;
+}
+
+  /* Media query voor mobiele apparaten */
+@media (max-width: 768px) {
+
+    .bold {
+        font-weight: bold;
+    }
+
+    table {
+      border: none;
+    }
+  
+    table caption {
+      font-size: 1.5em;
+    }
+  
+    table thead {
+      display: none;
+    }
+  
+    table tbody {
+      display: block;
+      width: 100%;
+    }
+  
+    tr {
+      display: block;
+      margin-bottom: 1em;
+      border: 1px solid #ddd;
+    }
+  
+    td {
+      display: block;
+      text-align: right;
+      font-size: 1em;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 0.5em;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    td:last-child {
+      border-bottom: 0;
+    }
+
+    .vreetschuren {
+        margin: 0 5%;
+      }
+      
+      .restaurant {
+        width: 45%;
+      }
+}
+
+@media screen and (max-width: 480px) {
+    .restaurant {
+      width: 100%;
+    }
+  }

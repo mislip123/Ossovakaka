@@ -8,6 +8,13 @@
         <link rel="stylesheet" href="CSS\StyleSheet.css">
     </head>
     <body class="ramranch">
+        <nav class="topbar">
+            <ul>
+                <li><a href="ramranch.php">Home</a></li>
+                <li><a href="planning_ramranch.php">Planning</a></li>
+            </ul>
+        </nav>
+
         <div class="izjen_titel">
             <h class="titel">COUNTDOWN TOT RAMRANCH</h>
         </div>

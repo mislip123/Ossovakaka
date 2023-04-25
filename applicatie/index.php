@@ -12,6 +12,7 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="vreetschuur.php">Vreetschuur</a></li>
+                <li><a href="planning.php">Planning</a></li>
             </ul>
         </nav>
 
