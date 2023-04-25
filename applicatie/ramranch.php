@@ -12,24 +12,34 @@
             <h class="titel">COUNTDOWN TOT RAMRANCH</h>
         </div>
 
-        <div class="countdown">
-            <?php
-                // Set the target date and time to count down to
-                $eind_datum = "2023-08-21 00:00:00";
-                
-                // Calculate the remaining time in seconds
-                $overige_tijd = strtotime($eind_datum) - time();
-                
-                // Calculate the remaining time in days, hours, minutes, and seconds
-                $overige_dagen = floor($overige_tijd / (60 * 60 * 24));
-                $overige_uren = floor(($overige_tijd % (60 * 60 * 24)) / (60 * 60));
-                $overige_minuten = floor(($overige_tijd % (60 * 60)) / 60);
-                $overige_seconden = $overige_tijd % 60;
-                
-                // Output the remaining time
-                echo "Aftellen tot $eind_datum<br>";
-                echo "Tijd resterend: $overige_dagen dagen, $overige_uren uren, $overige_minuten minuten en $overige_seconden seconden";           
-            ?>
+        <div id="countdown" class="countdown">
+            Aftellen tot 2023-08-21 00:00:00<br>
+            Tijd resterend: 0 dagen, 0 uren, 0 minuten en 0 seconden
         </div>
+
+        <script>
+            function updateCountdownRamranch() {
+                var eind_datum = new Date("2023-08-21 00:00:00");
+                var nu = new Date();
+                var overige_tijd = eind_datum - nu;
+
+                if (overige_tijd <= 0) {
+                    clearInterval(intervalId);
+                    document.getElementById("countdown").innerHTML = "De countdown is voorbij!";
+                } else {
+                    var dagen = Math.floor(overige_tijd / (1000 * 60 * 60 * 24));
+                    var uren = Math.floor((overige_tijd % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minuten = Math.floor((overige_tijd % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconden = Math.floor((overige_tijd % (1000 * 60)) / 1000);
+
+                    document.getElementById("countdown").innerHTML = "Aftellen tot 2023-08-21 00:00:00<br>" +
+                        "Tijd resterend: " + dagen + " dagen, " + uren + " uren, " + minuten + " minuten en " + seconden + " seconden";
+                }
+            }
+
+            updateCountdownRamranch();
+
+            var intervalId = setInterval(updateCountdown, 1000);
+        </script>
     </body>
 </html>
