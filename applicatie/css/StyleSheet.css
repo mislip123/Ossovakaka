@@ -204,6 +204,10 @@ tr:hover {
     margin-top: 0;
 }
 
+.dienant {
+  background-color: blanchedalmond;
+}
+
   /* Media query voor mobiele apparaten */
 @media (max-width: 768px) {
 

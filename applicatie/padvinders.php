@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="nl">
     <head>
-        <title>KiKaKankerVakantie</title>
+        <title>Ossovacantion</title>
         <meta charset="utf-8">
-        <link rel="icon" type="image/x-icon" href="..\Images\logo.png">
+        <link rel="icon" type="image/x-icon" href="..\images\logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="CSS\StyleSheet.css">
     </head>
@@ -39,7 +39,7 @@
 
             updateCountdownPadvinders();
 
-            var intervalId = setInterval(updateCountdown, 1000);
+            var intervalId = setInterval(updateCountdownPadvinders, 1000);
         </script>
     </body>
 </html>
