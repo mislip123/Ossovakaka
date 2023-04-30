@@ -51,5 +51,39 @@
 
             var intervalId = setInterval(updateCountdownOssovacantion, 1000);
         </script>
+
+        <div class="izjen_titel">
+            <h class="titel">COUNTDOWN TOT FISSA ZWOLLE</h>
+        </div>
+
+        <div id="countdownFissa" class="countdown">
+            Aftellen tot 2023-05-05 00:00:00<br>
+            Tijd resterend: 0 dagen, 0 uren, 0 minuten en 0 seconden
+        </div>
+
+        <script>
+            function updateCountdownFissa() {
+                var eind_datumFissa = new Date("2023-05-05 00:00:00");
+                var nuFissa = new Date();
+                var overige_tijdFissa = eind_datumFissa - nuFissa;
+
+                if (overige_tijdFissa <= 0) {
+                    clearInterval(intervalIdFissa);
+                    document.getElementById("countdownFissa").innerHTML = "De countdown is voorbij!";
+                } else {
+                    var dagenFissa = Math.floor(overige_tijdFissa / (1000 * 60 * 60 * 24));
+                    var urenFissa = Math.floor((overige_tijdFissa % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutenFissa = Math.floor((overige_tijdFissa % (1000 * 60 * 60)) / (1000 * 60));
+                    var secondenFissa = Math.floor((overige_tijdFissa % (1000 * 60)) / 1000);
+
+                    document.getElementById("countdownFissa").innerHTML = "Aftellen tot 2023-05-05 00:00:00<br>" +
+                        "Tijd resterend: " + dagenFissa + " dagen, " + urenFissa + " uren, " + minutenFissa + " minuten en " + secondenFissa + " seconden";
+                }
+            }
+
+            updateCountdownFissa();
+
+            var intervalIdFissa = setInterval(updateCountdownFissa, 1000);
+        </script>
     </body>
 </html>
