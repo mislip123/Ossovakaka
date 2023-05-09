@@ -208,6 +208,18 @@ tr:hover {
   background-color: blanchedalmond;
 }
 
+.poeptaken {
+  background-color: blanchedalmond;
+}
+
+.broodschappen {
+  background-color: blanchedalmond;
+}
+
+.mededelingen {
+  background-color: blanchedalmond;
+}
+
   /* Media query voor mobiele apparaten */
 @media (max-width: 768px) {
 

@@ -14,6 +14,7 @@
                 <li><a href="vreetschuur.php">Vreetschuur</a></li>
                 <li><a href="planning.php">Planning</a></li>
                 <li><a href="broodschappen.php">Broodschappen</a></li>
+                <li><a href="poeptaken.php">Poeptaken</a></li>
                 <li><a href="dienant.php">Dinand</a></li>
             </ul>
         </nav>

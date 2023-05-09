@@ -20,24 +20,15 @@
         </nav>
 
         <div class="izjen_titel">
-            <h class="titel">DIENANT</h>
+            <h class="titel">Poeptaken</h>
         </div>
 
-        <ul class="dienant">
-            <li>Openbaar getongt</li>
-            <li>Gestolen bij de Plus</li>
-            <li>Gestolen bij de Albert Heijn</li>
-            <li>Gestolen bij de Jumbo</li>
-            <li>Drugs</li>
-            <li>Pilletjes</li>
-            <li>Coma zuipen</li>
-            <li>Whiskey + antibiotica</li>
-            <li>Dronken scooterrijden</li>
-            <li>Stoned scooterrijden</li>
-            <li>Vapen</li>
-            <li>Broer niet feliciteren</li>
-            <li>Vader niet feliciteren</li>
-            <li>Grond pizza's verkopen</li>
+        <ul class="poeptaken">
+            <li><strong>Thomas: </strong>Fietsen regelen</li>
+            <li><strong>Iedereen: </strong>Boodschappen bekijken (zie <a href="broodschappen.php">Broodschappen</a>).<strong> Dit wordt maximaal 1 - 2 weken van te voren geregeld</strong></li>
+            <li><strong>Iedereen + Nikki: </strong>Datum prikken voor Magieland</li>
+            <li><strong>Iedereen: </strong>Kijken wat welke dag doen (zie <a href="planning.php">Planning</a>)</li>
+            <li><strong>Iedereen: </strong>Kijken wat welke dag eten (zie <a href="vreetschuur.php">Vreetschuur</a>)</li>
         </ul>
     </body>
 </html>
