@@ -23,7 +23,7 @@
         </div>
 
         <div id="countdown" class="countdown">
-            Aftellen tot 2023-08-07 00:00:00<br>
+            Aftellen tot 2023-08-07<br>
             Tijd resterend: 0 dagen, 0 uren, 0 minuten en 0 seconden
         </div>
 
@@ -42,7 +42,7 @@
                     var minuten = Math.floor((overige_tijd % (1000 * 60 * 60)) / (1000 * 60));
                     var seconden = Math.floor((overige_tijd % (1000 * 60)) / 1000);
 
-                    document.getElementById("countdown").innerHTML = "Aftellen tot 2023-08-07 00:00:00<br>" +
+                    document.getElementById("countdown").innerHTML = "Aftellen tot 2023-08-07<br>" +
                         "Tijd resterend: " + dagen + " dagen, " + uren + " uren, " + minuten + " minuten en " + seconden + " seconden";
                 }
             }
@@ -51,7 +51,7 @@
 
             var intervalId = setInterval(updateCountdownOssovacantion, 1000);
         </script>
-
+<!-- 
         <div class="izjen_titel">
             <h class="titel">COUNTDOWN TOT FISSA ZWOLLE</h>
         </div>
@@ -83,7 +83,7 @@
 
             updateCountdownFissa();
 
-            var intervalIdFissa = setInterval(updateCountdownFissa, 1000);
+            var intervalIdFissa = setInterval(updateCountdownFissa, 1000); -->
         </script>
     </body>
 </html>
