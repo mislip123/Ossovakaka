@@ -15,11 +15,13 @@
         $headers = "From: $naam <$email>\r\n";
         $headers .= "Reply-To: $email\r\n";
 
-        if (mail($to, $subject, $email_content, $headers)) {
-            echo "Thx babe voor dit mooie mailtje. UwU";
-        } else {
-            echo "Sorry, maar je hebt kanker. Probeer het later nog eens";
-        }
+        mail($to, $subject, $email_content, $headers);
+
+        // if (mail($to, $subject, $email_content, $headers)) {
+        //     echo "Thx babe voor dit mooie mailtje. UwU";
+        // } else {
+        //     echo "Sorry, maar je hebt kanker. Probeer het later nog eens";
+        // }
     } else {
         header("Location: gondagd.php");
         exit;
