@@ -15,30 +15,28 @@
                 <li><a href="planning.php">Planning</a></li>
                 <li><a href="broodschappen.php">Broodschappen</a></li>
                 <li><a href="poeptaken.php">Poeptaken</a></li>
-                <li><a href="dienant.php">Dienant</a></li>
+                <li><a href="dienant.php">Dinand</a></li>
                 <li><a href="gondagd.php">Gondagd</a></li>
             </ul>
         </nav>
 
         <div class="izjen_titel">
-            <h class="titel">DIENANT</h>
+            <h class="titel">GONDAGD</h>
         </div>
 
-        <ul class="dienant">
-            <li>Openbaar getongt</li>
-            <li>Gestolen bij de Plus</li>
-            <li>Gestolen bij de Albert Heijn</li>
-            <li>Gestolen bij de Jumbo</li>
-            <li>Drugs</li>
-            <li>Pilletjes</li>
-            <li>Coma zuipen</li>
-            <li>Whiskey + antibiotica</li>
-            <li>Dronken scooterrijden</li>
-            <li>Stoned scooterrijden</li>
-            <li>Vapen</li>
-            <li>Broer niet feliciteren</li>
-            <li>Vader niet feliciteren</li>
-            <li>Grond pizza's verkopen</li>
-        </ul>
+        <div class="gondagd">
+            <form action="..\mail\send_email.php" method="post">
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="bericht">Bericht:</label><br>
+                <textarea id="bericht" name="bericht" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Send Email"> 
+            </form>
+        </div>
     </body>
 </html>

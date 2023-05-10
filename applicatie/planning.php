@@ -16,6 +16,7 @@
                 <li><a href="broodschappen.php">Broodschappen</a></li>
                 <li><a href="poeptaken.php">Poeptaken</a></li>
                 <li><a href="dienant.php">Dinand</a></li>
+                <li><a href="gondagd.php">Gondagd</a></li>
             </ul>
         </nav>
 
