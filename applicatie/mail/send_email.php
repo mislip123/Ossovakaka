@@ -1,5 +1,54 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+// Import PHPMailer classes
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require 'applicatie/mail/PHPMailer-master/src/Exception.php';
+require 'applicatie/mail/PHPMailer-master/src/PHPMailer.php';
+require 'applicatie/mail/PHPMailer-master/src/SMTP.php';
+
+$mail = new PHPMailer(true);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+try {
+    // Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.transip.email';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@ossovacantion.nl';
+    $mail->Password   = 'OssoVacantion2023';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = 465;
+
+    // Recipients
+    $mail->setFrom('from@example.com', 'Mailer');
+    $mail->addAddress('joe@example.net', 'Joe User');
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
+
+    // Attachments
+    $mail->addAttachment('/var/tmp/file.tar.gz');
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');
+
+    // Content
+    $mail->isHTML(true);
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Thx babe voor dit mooie mailtje. UwU';
+} catch (Exception $e) {
+    echo "Sorry, maar je hebt kanker. Probeer het later nog eens. Mailer Error: {$mail->ErrorInfo}";
+}
+}
+
+/*     
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $naam = $_POST['naam'];
         $email = $_POST['email'];
         $bericht = $_POST['bericht'];
