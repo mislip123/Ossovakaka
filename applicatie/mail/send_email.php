@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+// Path to dependencies
 require 'applicatie/mail/PHPMailer-master/src/Exception.php';
 require 'applicatie/mail/PHPMailer-master/src/PHPMailer.php';
 require 'applicatie/mail/PHPMailer-master/src/SMTP.php';
@@ -15,25 +16,25 @@ try {
     // Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();
-    $mail->Host       = 'smtp.transip.email';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'info@ossovacantion.nl';
-    $mail->Password   = 'OssoVacantion2023';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port       = 465;
+    $mail->Host       = 'smtp.transip.email'; # Zo laten, hoort bij domeinserver
+    $mail->SMTPAuth   = true; # Verplicht voor onze domeinserver
+    $mail->Username   = 'testing@ossovacantion.nl';
+    $mail->Password   = 'OssoTester2023';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; # Versleuteld mailen
+    $mail->Port       = 465; # Zo laten, hoort bij domeinserver
 
     // Recipients
-    $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress('joe@example.net', 'Joe User');
-    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');
+    $mail->setFrom('from@example.com', 'Mailer'); # Afzender; dus invuller de van form
+    $mail->addAddress('joe@example.net', 'Joe User'); # Voor ons om te ontvangen; info@ossovacantion.nl
+    $mail->addReplyTo('info@example.com', 'Information'); # Niet helemaal zeker welke kant dit op werkt...
+    $mail->addCC('cc@example.com'); # CC, als je wil
+    $mail->addBCC('bcc@example.com'); # BCC
 
     // Attachments
-    $mail->addAttachment('/var/tmp/file.tar.gz');
-    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');
+    $mail->addAttachment('/var/tmp/file.tar.gz'); # Voor zieke naaktfoto's
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg'); # ^^
 
-    // Content
+    // Content # Bouw je mailcontent hieronder
     $mail->isHTML(true);
     $mail->Subject = 'Here is the subject';
     $mail->Body    = 'This is the HTML message body';
@@ -41,12 +42,12 @@ try {
 
     $mail->send();
     echo 'Thx babe voor dit mooie mailtje. UwU';
-} catch (Exception $e) {
+} catch (Exception $e) { // Error catcher
     echo "Sorry, maar je hebt kanker. Probeer het later nog eens. Mailer Error: {$mail->ErrorInfo}";
 }
 }
 
-/*     
+/* # Mocht je dit nog nodig hebben ofzo:
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $naam = $_POST['naam'];
@@ -75,4 +76,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: gondagd.php");
         exit;
     }
-?>
+?> 
+
+*/
