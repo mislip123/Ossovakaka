@@ -1,0 +1,361 @@
+body.ossovakaka {
+    background-image: url('/images/background_ossovakaka.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+body.ramranch {
+    background-image: url('/images/background_ramranch.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+body.padvinders {
+    background-image: url('/images/background_padvinders.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: palevioletred;
+    padding: 20px   10px;
+}
+
+.header a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 50%
+}
+
+.header a.header-rechts {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header a.active {
+    border-bottom: 6px solid dimgray;
+    color: black;
+    padding-bottom: 4px;
+}
+
+.header-links {
+    float: left;
+}
+
+.links {
+    background-color: antiquewhite;
+}
+
+.izjen_titel {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titel {
+    color: black;
+    border: antiquewhite;
+    font-size: 40px;
+    text-shadow: 2px 2px #000;
+    -webkit-text-stroke: 1px #fff;
+    color: #000;
+}
+
+.ondertitel {
+    color: rgb(255, 255, 255);
+    border: black;
+    font-size: 20px;
+    text-shadow: 2px 2px #000;
+    -webkit-text-stroke: 1px #fff;
+    color: #000;  
+}
+
+.countdown {
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.countdown h2 {
+    font-size: 36px;
+}
+
+.countdown p {
+    font-size: 24px;
+}
+
+.topbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .topbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topbar li {
+    float: left;
+  }
+  
+  .topbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topbar li a:hover {
+    background-color: #111;
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+tr:hover {
+    background-color: orange;
+}
+
+.bold {
+    font-weight: normal;
+}
+
+/* restaurants */
+.vreetschuren {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.restaurant {
+  background-color: silver;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #aaa;
+  margin: 20px 0;
+  padding: 20px;
+  width: 70%;
+}
+
+.restaurant img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.restaurant h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.restaurant p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.restaurant a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.restaurant a:hover {
+  text-decoration: underline;
+}
+
+.restaurant img {
+    float: left;
+    margin-right: 10px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.restaurant__title {
+    margin-top: 0;
+}
+
+.dienant {
+  background-color: blanchedalmond;
+}
+
+.poeptaken {
+  background-color: blanchedalmond;
+}
+
+.broodschappen {
+  background-color: blanchedalmond;
+}
+
+.mededelingen {
+  background-color: blanchedalmond;
+}
+
+/* Styles for the contact form */
+.gondagd {
+  background-color: blanchedalmond;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  background-color: blanchedalmond;
+}
+
+form:before,
+form:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: blanchedalmond;
+  z-index: -1;
+}
+
+form:before {
+  left: -25%;
+}
+
+form:after {
+  right: -25%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+
+
+  /* Media query voor mobiele apparaten */
+@media (max-width: 768px) {
+
+    .bold {
+        font-weight: bold;
+    }
+
+    table {
+      border: none;
+    }
+  
+    table caption {
+      font-size: 1.5em;
+    }
+  
+    table thead {
+      display: none;
+    }
+  
+    table tbody {
+      display: block;
+      width: 100%;
+    }
+  
+    tr {
+      display: block;
+      margin-bottom: 1em;
+      border: 1px solid #ddd;
+    }
+  
+    td {
+      display: block;
+      text-align: right;
+      font-size: 1em;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 0.5em;
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    td:last-child {
+      border-bottom: 0;
+    }
+
+    .vreetschuren {
+        margin: 0 5%;
+      }
+      
+      .restaurant {
+        width: 45%;
+      }
+}
+
+@media screen and (max-width: 480px) {
+    .restaurant {
+      width: 100%;
+    }
+  }
