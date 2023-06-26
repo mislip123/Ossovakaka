@@ -21,7 +21,7 @@
         </nav>
 
         <div class="izjen_titel">
-            <h class="titel">COUNTDOWN TOT KANKER 2.0</h>
+            <h class="titel">COUNTDOWN TOT OSSOVACANTION 2.0</h>
         </div>
 
         <div id="countdown" class="countdown">
