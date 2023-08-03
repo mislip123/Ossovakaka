@@ -36,28 +36,28 @@
                 <tbody>
                     <tr>
                         <td class="bold">7 augustus (maandag)</td>
-                        <td>Tommie Teleshopping kijken</td>
-                        <td>McDonalds</td>
+                        <td>Aankomst tussen 16.00 - 17.00</td>
+                        <td>Insidious: De rode deur, 21.40 - 23.42 in Pathe Helmond</td>
                     </tr>
                     <tr>
                         <td class="bold">8 augustus (dinsdag)</td>
-                        <td>Tommie Teleshopping kijken</td>
-                        <td>McDonalds</td>
+                        <td>Zooparc Overloon (09.30 - 16.30 open)</td>
+                        <td>Na afloop, eten ter plekke bedenken</td>
                     </tr>
                     <tr>
                         <td class="bold">9 augustus (woensdag)</td>
-                        <td>Tommie Teleshopping kijken</td>
-                        <td>McDonalds</td>
+                        <td>Rondkijken in Venray en omstreken</td>
+                        <td>/</td>
                     </tr>
                     <tr>
                         <td class="bold">10 augustus (donderdag)</td>
-                        <td>Tommie Teleshopping kijken</td>
-                        <td>McDonalds</td>
+                        <td>Magieland</td>
+                        <td>Aap Beer Cactus restaurant</td>
                     </tr>
                     <tr>
                         <td class="bold">11 augustus (vrijdag)</td>
-                        <td>Tommie Teleshopping kijken</td>
-                        <td>McDonalds</td>
+                        <td>Izjen trampopark</td>
+                        <td>Misschien bowlen</td>
                     </tr>
                     <tr>
                         <td class="bold">12 augustus (zaterdag)</td>
@@ -71,8 +71,7 @@
                     </tr>
                     <tr>
                         <td class="bold">14 augustus (maandag)</td>
-                        <td>Leaven</td>
-                        <td>McDonalds</td>
+                        <td>Leaven vóór 10.30</td>
                     </tr>
                 </tbody>
             </table>
